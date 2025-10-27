@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Oct27_ClassLib_EventDriv_BautistaM;
 
 namespace Oct27_PrivateAssemblies_EventDriv_BautistaM
 {
@@ -16,7 +17,7 @@ namespace Oct27_PrivateAssemblies_EventDriv_BautistaM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new BasicCalculator());
         }
     }
 }
