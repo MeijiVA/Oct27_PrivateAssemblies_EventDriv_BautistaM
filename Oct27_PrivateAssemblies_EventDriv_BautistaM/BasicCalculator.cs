@@ -21,21 +21,29 @@ namespace Oct27_ClassLib_EventDriv_BautistaM
 
         private void btnCompute_Click(object sender, EventArgs e)
         {
-            switch (cbxOperation.Text)
+            try
             {
-                case "+":
-                    lblCompute.Text = "" + BasicComputation.Addition(float.Parse(txtNum1.Text), float.Parse(txtNum2.Text));
-                    break;
-                case "-":
-                    lblCompute.Text = "" + BasicComputation.Subtraction(float.Parse(txtNum1.Text), float.Parse(txtNum2.Text));
-                    break;
-                case "*":
-                    lblCompute.Text = "" + BasicComputation.Multiplication(float.Parse(txtNum1.Text), float.Parse(txtNum2.Text));
-                    break;
-                case "/":
-                    lblCompute.Text = "" + BasicComputation.Division(float.Parse(txtNum1.Text), float.Parse(txtNum2.Text));
-                    break;
+                switch (cbxOperation.Text)
+                {
+                    case "+":
+                        lblCompute.Text = "" + BasicComputation.Addition(float.Parse(txtNum1.Text), float.Parse(txtNum2.Text));
+                        break;
+                    case "-":
+                        lblCompute.Text = "" + BasicComputation.Subtraction(float.Parse(txtNum1.Text), float.Parse(txtNum2.Text));
+                        break;
+                    case "*":
+                        lblCompute.Text = "" + BasicComputation.Multiplication(float.Parse(txtNum1.Text), float.Parse(txtNum2.Text));
+                        break;
+                    case "/":
+                        lblCompute.Text = "" + BasicComputation.Division(float.Parse(txtNum1.Text), float.Parse(txtNum2.Text));
+                        break;
+                }
             }
+            catch (Exception)
+            {
+                MessageBox.Show("Exception Thrown");
+            }
+
         }
     }
 }

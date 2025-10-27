@@ -83,5 +83,11 @@
   <ItemGroup>
     <None Include="Resources\free-background-7.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Oct27_CalculatorPrivateAssembly_EventDriv_BautistaM\Oct27_CalculatorPrivateAssembly_EventDriv_BautistaM.csproj">
+      <Project>{49496eb1-3e01-4159-87ca-178c67f5bb11}</Project>
+      <Name>Oct27_CalculatorPrivateAssembly_EventDriv_BautistaM</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

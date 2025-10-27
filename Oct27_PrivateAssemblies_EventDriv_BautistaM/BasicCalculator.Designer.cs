@@ -33,9 +33,9 @@
             this.txtNum2 = new System.Windows.Forms.TextBox();
             this.cbxOperation = new System.Windows.Forms.ComboBox();
             this.pnl = new System.Windows.Forms.Panel();
-            this.btnCompute = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblCompute = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnCompute = new System.Windows.Forms.Button();
             this.pnl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +66,6 @@
             this.txtNum2.Name = "txtNum2";
             this.txtNum2.Size = new System.Drawing.Size(364, 38);
             this.txtNum2.TabIndex = 3;
-
             // 
             // cbxOperation
             // 
@@ -92,15 +91,16 @@
             this.pnl.Size = new System.Drawing.Size(364, 143);
             this.pnl.TabIndex = 5;
             // 
-            // btnCompute
+            // lblCompute
             // 
-            this.btnCompute.Location = new System.Drawing.Point(141, 429);
-            this.btnCompute.Name = "btnCompute";
-            this.btnCompute.Size = new System.Drawing.Size(126, 67);
-            this.btnCompute.TabIndex = 6;
-            this.btnCompute.Text = "Compute";
-            this.btnCompute.UseVisualStyleBackColor = true;
-            this.btnCompute.Click += new System.EventHandler(this.btnCompute_Click);
+            this.lblCompute.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCompute.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCompute.ForeColor = System.Drawing.Color.Green;
+            this.lblCompute.Location = new System.Drawing.Point(0, 27);
+            this.lblCompute.Name = "lblCompute";
+            this.lblCompute.Size = new System.Drawing.Size(364, 116);
+            this.lblCompute.TabIndex = 1;
+            this.lblCompute.Text = "000000";
             // 
             // label2
             // 
@@ -113,21 +113,21 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Total:";
             // 
-            // lblCompute
+            // btnCompute
             // 
-            this.lblCompute.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCompute.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCompute.ForeColor = System.Drawing.Color.Green;
-            this.lblCompute.Location = new System.Drawing.Point(0, 27);
-            this.lblCompute.Name = "lblCompute";
-            this.lblCompute.Size = new System.Drawing.Size(364, 116);
-            this.lblCompute.TabIndex = 1;
-            this.lblCompute.Text = "000000";
+            this.btnCompute.Location = new System.Drawing.Point(141, 429);
+            this.btnCompute.Name = "btnCompute";
+            this.btnCompute.Size = new System.Drawing.Size(126, 67);
+            this.btnCompute.TabIndex = 6;
+            this.btnCompute.Text = "Compute";
+            this.btnCompute.UseVisualStyleBackColor = true;
+            this.btnCompute.Click += new System.EventHandler(this.btnCompute_Click);
             // 
-            // Form1
+            // BasicCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Oct27_PrivateAssemblies_EventDriv_BautistaM.Properties.Resources.free_background_7;
             this.ClientSize = new System.Drawing.Size(411, 540);
             this.Controls.Add(this.btnCompute);
             this.Controls.Add(this.pnl);
@@ -135,7 +135,7 @@
             this.Controls.Add(this.txtNum2);
             this.Controls.Add(this.txtNum1);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "BasicCalculator";
             this.Text = "Form1";
             this.pnl.ResumeLayout(false);
             this.ResumeLayout(false);
